@@ -97,13 +97,13 @@ const Navbar = () => {
                 className=' flex h-full items-center '
                 >
                     <div
-                    className=' hidden md:block '
+                    className=' hidden md:block  gap-10 '
                     >
                         {
                             navItems?.map((items, i) => (
                                 <a
                                 key={items}
-                                className=' nav-hover-btn '
+                                className=' nav-hover-btn px-10 '
                                 href={`#${items.toLowerCase()}`}
                                 >
                                     {items}
@@ -128,9 +128,9 @@ const Navbar = () => {
                         [1,2,3,4].map((bar) => (
                             <div
                             key={bar}
-                            className={` indicator-line ${isIndicatorActive ? 'active:' : '' } `}
+                            className={` indicator-line ${isAudioPlaying && isIndicatorActive ? 'active:' : '' } `}
                             style={{
-                                animationDelay: `${ bar * 0.1 }s`
+                                '--animation-order': bar - 1
                             }}
                             />
 

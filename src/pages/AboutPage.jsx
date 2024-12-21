@@ -4,6 +4,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import AnimateTitle from "../components/AnimateTitle";
+import TiltCard from "../components/TiltCard";
 
 const AboutPage = () => {
   useGSAP(() => {

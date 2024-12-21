@@ -6,6 +6,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import TiltCard from "./TiltCard";
+import { LiaLocationArrowSolid } from "react-icons/lia";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -136,7 +137,7 @@ const HeroSection = () => {
 
         <div className=" absolute left-0 top-0 z-40 size-full ">
           <div className=" mt-24 px-5 sm:px-10 ">
-            <h1 className=" special-font hero-heading text-blue-50 -tracking-widest ">
+            <h1 className=" special-font hero-heading text-blue-50 ">
               redefi<b>n</b>
               <b>e</b>
             </h1>
@@ -149,8 +150,8 @@ const HeroSection = () => {
             <CustomButton
               id="watch-trailer"
               title="Watch Trailer"
-              customContainer=" !bg-yellow-300 flex-center gap-1"
-              leftIcon={<TiLocationArrow className=" size-4 " />}
+              customContainer=" bg-yellow-300 flex-center gap-1"
+              leftIcon={<TiLocationArrow className=" size-5 fill-[#000] mt-0.5 rotate-45 " />}
             />
           </div>
         </div>

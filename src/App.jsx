@@ -7,6 +7,9 @@ import AboutPage from "./pages/AboutPage";
 import Loading from "./components/Loading";
 import Navbar from "./components/Navbar";
 import FeaturePage from "./pages/FeaturePage";
+import StoryPage from "./pages/StoryPage";
+import ContactPage from "./pages/ContactPage";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -18,6 +21,12 @@ function App() {
       <AboutPage />
 
       <FeaturePage />
+
+      <StoryPage />
+
+      <ContactPage />
+
+      <Footer />
     </main>
   );
 }

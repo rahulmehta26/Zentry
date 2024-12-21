@@ -26,6 +26,7 @@ const TiltCard = ({ children, className, props }) => {
 
   const handleMouseLeave = () => {
     setTransformStyle("");
+    
   };
 
   return (

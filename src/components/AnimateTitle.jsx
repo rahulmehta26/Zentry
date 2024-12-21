@@ -47,7 +47,7 @@ const AnimateTitle = ({title, containerStyle}) => {
                 line.split(' ').map((word,i) => (
                     <span
                     key={i}
-                    className=" animated-word text-[6rem] whitespace-nowrap "
+                    className=" animated-word text-[6rem] uppercase"
                     dangerouslySetInnerHTML={{ __html: word }}
                     />
                 ) )
